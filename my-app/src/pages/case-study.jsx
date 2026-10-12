@@ -184,10 +184,11 @@ function CaseStudy() {
                       Your browser does not support embedded video.
                     </video>
                   </div>
-                  <p className="mt-3.5 max-w-[62ch] text-sm leading-relaxed text-muted">
-                    A walkthrough of the running system: live readings arriving
-                    from the plug, appliance control, and the analytics views.
-                  </p>
+                  {project.demoVideo.caption && (
+                    <p className="mt-3.5 max-w-[62ch] text-sm leading-relaxed text-muted">
+                      {project.demoVideo.caption}
+                    </p>
+                  )}
                 </Reveal>
               </CaseSection>
             )}
@@ -239,7 +240,7 @@ function CaseStudy() {
                   <>
                     <Reveal>
                       <h3 className="section-label mt-12 mb-4">
-                        Data stores — and why three
+                        {project.dataStoresHeading ?? "Data stores"}
                       </h3>
                     </Reveal>
                     <RowList rows={project.dataStores} />
@@ -273,13 +274,13 @@ function CaseStudy() {
 
             {project.endpoints && (
               <CaseSection id="api" title="API reference">
-                <Reveal>
-                  <p className="mb-7 max-w-[62ch] text-sm leading-relaxed text-muted">
-                    Everything the dashboard calls. Analytics routes are proxied
-                    through the backend, so the Python service is never exposed
-                    to a browser directly.
-                  </p>
-                </Reveal>
+                {project.endpointsNote && (
+                  <Reveal>
+                    <p className="mb-7 max-w-[62ch] text-sm leading-relaxed text-muted">
+                      {project.endpointsNote}
+                    </p>
+                  </Reveal>
+                )}
                 <EndpointTable endpoints={project.endpoints} />
               </CaseSection>
             )}

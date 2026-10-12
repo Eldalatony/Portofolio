@@ -6,7 +6,7 @@ function FigureList({ figures, plate = false }) {
       {figures.map((figure) => (
         <li key={figure.src}>
           <Reveal>
-            <figure>
+            <figure className={figure.narrow ? "mx-auto max-w-xs" : undefined}>
               <div
                 className={`card overflow-hidden rounded-2xl ${plate ? "plate p-2.5" : "p-1.5"}`}
               >

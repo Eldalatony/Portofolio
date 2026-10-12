@@ -33,7 +33,7 @@ function EndpointTable({ endpoints }) {
                 </td>
                 <td className="px-5 py-2.5 text-muted">{endpoint.purpose}</td>
                 <td className="px-5 py-2.5 text-xs text-muted">
-                  {endpoint.auth ? "JWT" : "public"}
+                  {endpoint.access ?? (endpoint.auth ? "JWT" : "public")}
                 </td>
               </tr>
             ))}
