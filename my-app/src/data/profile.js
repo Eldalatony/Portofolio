@@ -1,3 +1,5 @@
+import { asset } from "../lib/asset";
+
 export const profile = {
   name: "Moustafa Mohammed Abdelwhab",
   shortName: "Moustafa Abdelwhab",
@@ -7,7 +9,7 @@ export const profile = {
   pitch:
     "I design and deliver complete systems: web front ends, backend services and REST APIs, relational and NoSQL data layers, and containerized deployment.",
   email: "moustafaeldalatony8@gmail.com",
-  resumeHref: "/resume.pdf",
+  resumeHref: asset("resume.pdf"),
 };
 
 export const contacts = [

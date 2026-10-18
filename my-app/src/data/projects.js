@@ -1,3 +1,5 @@
+import { asset } from "../lib/asset";
+
 export const projects = [
   {
     slug: "shemms",
@@ -5,7 +7,7 @@ export const projects = [
     tagline:
       "IoT smart plug that measures, secures, and forecasts household energy use.",
     cover: {
-      src: "/projects/shemms/dashboard-live.png",
+      src: asset("projects/shemms/dashboard-live.png"),
       alt: "SHEMMS live energy dashboard showing real-time wattage and alerts",
       width: 1600,
       height: 824,
@@ -18,19 +20,19 @@ export const projects = [
 
     showcase: [
       {
-        src: "/projects/shemms/dashboard-insights.png",
+        src: asset("projects/shemms/dashboard-insights.png"),
         alt: "Energy trend, cost-by-device and peak-hour charts",
         width: 1600,
         height: 830,
       },
       {
-        src: "/projects/shemms/dashboard-live.png",
+        src: asset("projects/shemms/dashboard-live.png"),
         alt: "Live energy dashboard with per-appliance wattage and alerts",
         width: 1600,
         height: 824,
       },
       {
-        src: "/projects/shemms/prototype-lcd.png",
+        src: asset("projects/shemms/prototype-lcd.png"),
         alt: "Breadboard prototype showing live voltage, current and power on its LCD",
         width: 975,
         height: 839,
@@ -56,8 +58,8 @@ export const projects = [
     ],
 
     demoVideo: {
-      src: "/projects/shemms/demo.mp4",
-      poster: "/projects/shemms/dashboard-live.png",
+      src: asset("projects/shemms/demo.mp4"),
+      poster: asset("projects/shemms/dashboard-live.png"),
       caption:
         "A walkthrough of the running system: live readings arriving from the plug, appliance control, and the analytics views.",
     },
@@ -380,7 +382,7 @@ export const projects = [
 
     gallery: [
       {
-        src: "/projects/shemms/dashboard-live.png",
+        src: asset("projects/shemms/dashboard-live.png"),
         alt: "Live energy dashboard with per-appliance wattage and alert feed",
         width: 1600,
         height: 824,
@@ -388,7 +390,7 @@ export const projects = [
           "Live monitor — current draw, voltage, rate and energy for the selected plug, with a severity-ranked alert feed and an inline toggle that switches the physical relay.",
       },
       {
-        src: "/projects/shemms/dashboard-insights.png",
+        src: asset("projects/shemms/dashboard-insights.png"),
         alt: "Dashboard insights: energy trend, cost by device, peak hours",
         width: 1600,
         height: 830,
@@ -396,7 +398,7 @@ export const projects = [
           "Today at a glance — consumption, cost and projected bill, over an energy trend line, a cost-share donut per device, and a peak-hour histogram identifying the busiest hour.",
       },
       {
-        src: "/projects/shemms/analytics-light.png",
+        src: asset("projects/shemms/analytics-light.png"),
         alt: "Analytics page in light theme with model readiness badges",
         width: 975,
         height: 501,
@@ -404,14 +406,14 @@ export const projects = [
           "Analytics in light theme. The badges show per-device model state, so a user can see which appliances have enough history for anomaly scoring.",
       },
       {
-        src: "/projects/shemms/auth.png",
+        src: asset("projects/shemms/auth.png"),
         alt: "SHEMMS sign-in screen",
         width: 520,
         height: 565,
         caption: "JWT-backed sign-in; bcrypt-hashed credentials, role assigned on the account.",
       },
       {
-        src: "/projects/shemms/prototype-lcd.png",
+        src: asset("projects/shemms/prototype-lcd.png"),
         alt: "Breadboard prototype with LCD showing live voltage, current and power",
         width: 975,
         height: 839,
@@ -419,7 +421,7 @@ export const projects = [
           "The bench prototype reporting V:208 I:0.05 P:11.0 on its local LCD — the same values the backend received over MQTT, which is how sensor calibration was verified.",
       },
       {
-        src: "/projects/shemms/mqtt-encrypted.png",
+        src: asset("projects/shemms/mqtt-encrypted.png"),
         alt: "MQTT broker web client showing base64 ciphertext payloads",
         width: 975,
         height: 502,
@@ -430,42 +432,42 @@ export const projects = [
 
     diagrams: [
       {
-        src: "/projects/shemms/component-diagram.jpg",
+        src: asset("projects/shemms/component-diagram.jpg"),
         alt: "Component diagram: smart plug, MQTT broker, backend, databases, AI service, dashboard",
         width: 1536,
         height: 1024,
         caption: "Component diagram — the five moving parts and the traffic between them.",
       },
       {
-        src: "/projects/shemms/deployment-diagram.jpg",
+        src: asset("projects/shemms/deployment-diagram.jpg"),
         alt: "Deployment diagram across edge, network, server, data and client tiers",
         width: 1600,
         height: 877,
         caption: "Deployment view — edge, network, server, data and client tiers, with the protocol on each hop.",
       },
       {
-        src: "/projects/shemms/sequence-diagram.jpg",
+        src: asset("projects/shemms/sequence-diagram.jpg"),
         alt: "Sequence diagram of the real-time monitoring flow",
         width: 1536,
         height: 1024,
         caption: "Sequence diagram — one reading's journey from plug to chart, in eleven steps.",
       },
       {
-        src: "/projects/shemms/security-architecture.png",
+        src: asset("projects/shemms/security-architecture.png"),
         alt: "Security architecture showing encryption layers against network threats",
         width: 1024,
         height: 559,
         caption: "Security architecture — where each protection sits relative to the threats it answers.",
       },
       {
-        src: "/projects/shemms/requirements.png",
+        src: asset("projects/shemms/requirements.png"),
         alt: "Functional and non-functional requirements breakdown",
         width: 1024,
         height: 559,
         caption: "Requirements analysis — functional capabilities against non-functional targets.",
       },
       {
-        src: "/projects/shemms/lifecycle.png",
+        src: asset("projects/shemms/lifecycle.png"),
         alt: "Six-phase development lifecycle diagram",
         width: 1662,
         height: 946,
@@ -539,7 +541,7 @@ export const projects = [
     tagline:
       "Order, shipping and payment management for a China-to-Egypt consolidated freight office.",
     cover: {
-      src: "/projects/cargotrack/container-shared.png",
+      src: asset("projects/cargotrack/container-shared.png"),
       alt: "A shared container's page: volume and weight capacity split between two clients, its status track and allocated orders",
       width: 2880,
       height: 2696,
@@ -551,19 +553,19 @@ export const projects = [
 
     showcase: [
       {
-        src: "/projects/cargotrack/showcase-orders.png",
+        src: asset("projects/cargotrack/showcase-orders.png"),
         alt: "Office orders dashboard with an in-transit count and a dead-letter banner",
         width: 800,
         height: 500,
       },
       {
-        src: "/projects/cargotrack/showcase-container.png",
+        src: asset("projects/cargotrack/showcase-container.png"),
         alt: "Shared container with its volume split between two clients",
         width: 800,
         height: 500,
       },
       {
-        src: "/projects/cargotrack/showcase-portal.png",
+        src: asset("projects/cargotrack/showcase-portal.png"),
         alt: "Client portal showing what the client owes and the balance due",
         width: 800,
         height: 500,
@@ -843,7 +845,7 @@ export const projects = [
 
     gallery: [
       {
-        src: "/projects/cargotrack/orders-dashboard.png",
+        src: asset("projects/cargotrack/orders-dashboard.png"),
         alt: "Office orders dashboard listing client orders with their statuses",
         width: 2880,
         height: 1852,
@@ -851,7 +853,7 @@ export const projects = [
           "The office dashboard: every client order with its status, plus counts of what is in transit and what is delivered but waiting on its balance. The banner surfaces a notification that failed permanently.",
       },
       {
-        src: "/projects/cargotrack/bulk-move.png",
+        src: asset("projects/cargotrack/bulk-move.png"),
         alt: "A refused bulk move listing why each of three orders could not move",
         width: 2880,
         height: 2330,
@@ -859,7 +861,7 @@ export const projects = [
           "A bulk move, all or nothing. Three orders were asked to jump to Goods received; each was refused for its own reason, so none of them moved, and the report says exactly why.",
       },
       {
-        src: "/projects/cargotrack/order-detail.png",
+        src: asset("projects/cargotrack/order-detail.png"),
         alt: "Order detail page with status track, balance, production and QC, payments, documents and history",
         width: 2880,
         height: 4920,
@@ -867,7 +869,7 @@ export const projects = [
           "Order detail: the 8-step status track, the next allowed move, the balance due, production and QC, payments, documents with version chains, and a read-only status history.",
       },
       {
-        src: "/projects/cargotrack/container-shared.png",
+        src: asset("projects/cargotrack/container-shared.png"),
         alt: "A departed container shared by two clients, with capacity bars and allocated orders",
         width: 2880,
         height: 2696,
@@ -875,7 +877,7 @@ export const projects = [
           "One container shared by two clients at sea. The capacity bars split volume and weight per client, the capacity guard refuses anything past the limits, and allocations lock once the box is booked.",
       },
       {
-        src: "/projects/cargotrack/containers.png",
+        src: asset("projects/cargotrack/containers.png"),
         alt: "Containers list with routes, statuses and capacity used, and a form to open a container",
         width: 2880,
         height: 1800,
@@ -883,7 +885,7 @@ export const projects = [
           "Every container with its route, status and how full it is by volume and weight. The limits entered when a container is opened become its capacity guard.",
       },
       {
-        src: "/projects/cargotrack/notifications.png",
+        src: asset("projects/cargotrack/notifications.png"),
         alt: "Notification queue with pending, retrying, failed, dead-letter and sent counts",
         width: 2880,
         height: 1800,
@@ -891,7 +893,7 @@ export const projects = [
           "The notification queue. A message that failed 5 times sits in the dead-letter queue, with its last error, until someone retries it.",
       },
       {
-        src: "/projects/cargotrack/portal-shipments.png",
+        src: asset("projects/cargotrack/portal-shipments.png"),
         alt: "Client portal shipment page with timeline, amount owed, documents and messages",
         width: 2880,
         height: 2544,
@@ -899,7 +901,7 @@ export const projects = [
           "The client portal. A client sees only their own shipments, with a plain-language timeline, what they owe, their documents and every message sent to them.",
       },
       {
-        src: "/projects/cargotrack/portal-qc-sign-off.png",
+        src: asset("projects/cargotrack/portal-qc-sign-off.png"),
         alt: "Client portal showing a passed inspection with a Sign off button",
         width: 2880,
         height: 2296,
@@ -907,7 +909,7 @@ export const projects = [
           "QC sign-off in the portal. Only the client can sign their inspection, and until they do, the order can't be booked for shipping.",
       },
       {
-        src: "/projects/cargotrack/portal-mobile.png",
+        src: asset("projects/cargotrack/portal-mobile.png"),
         alt: "The client portal shipment timeline on a phone",
         width: 1170,
         height: 2532,
@@ -915,7 +917,7 @@ export const projects = [
         caption: "The portal on a phone.",
       },
       {
-        src: "/projects/cargotrack/sign-in.png",
+        src: asset("projects/cargotrack/sign-in.png"),
         alt: "CargoTrack sign-in screen",
         width: 2880,
         height: 1800,
@@ -926,7 +928,7 @@ export const projects = [
 
     diagrams: [
       {
-        src: "/projects/cargotrack/order-lifecycle.png",
+        src: asset("projects/cargotrack/order-lifecycle.png"),
         alt: "Order lifecycle state machine with guards, exception branches and the container hand-off",
         width: 2072,
         height: 1594,
@@ -934,7 +936,7 @@ export const projects = [
           "The order state machine: 8 states, 3 exception branches, the payment gates, and where the container takes over.",
       },
       {
-        src: "/projects/cargotrack/notification-pipeline.png",
+        src: asset("projects/cargotrack/notification-pipeline.png"),
         alt: "Notification pipeline across the API process, Redis and the worker, with retry and dead-letter paths",
         width: 2984,
         height: 3870,
@@ -1012,7 +1014,7 @@ export const projects = [
     tagline:
       "A live photo wall and guestbook for weddings and celebrations, filled from the guests' own phones.",
     cover: {
-      src: "/projects/glimpse/cover.jpg",
+      src: asset("projects/glimpse/cover.jpg"),
       alt: "A wedding's guest page: the couple's names on a vintage card over a wall of guests' photos",
       width: 2880,
       height: 1800,
@@ -1024,19 +1026,19 @@ export const projects = [
 
     showcase: [
       {
-        src: "/projects/glimpse/showcase-design.png",
+        src: asset("projects/glimpse/showcase-design.png"),
         alt: "Event wizard's Design step with the theme picker and a live preview",
         width: 800,
         height: 500,
       },
       {
-        src: "/projects/glimpse/showcase-cover.jpg",
+        src: asset("projects/glimpse/showcase-cover.jpg"),
         alt: "Guest cover page over a wall of the guests' photos",
         width: 800,
         height: 500,
       },
       {
-        src: "/projects/glimpse/showcase-ops.png",
+        src: asset("projects/glimpse/showcase-ops.png"),
         alt: "Staff dashboard overview with live events and recent uploads",
         width: 800,
         height: 500,
@@ -1316,7 +1318,7 @@ export const projects = [
 
     gallery: [
       {
-        src: "/projects/glimpse/landing-hero.jpg",
+        src: asset("projects/glimpse/landing-hero.jpg"),
         alt: "Glimpse landing page with a phone showing a themed guest page",
         width: 2880,
         height: 1800,
@@ -1324,7 +1326,7 @@ export const projects = [
           "The landing page. A host can sign up and build an event without paying; payment comes at the plan step.",
       },
       {
-        src: "/projects/glimpse/create-design.png",
+        src: asset("projects/glimpse/create-design.png"),
         alt: "Event wizard's Design step with theme tiles, colour controls and a live preview",
         width: 2880,
         height: 1800,
@@ -1332,7 +1334,7 @@ export const projects = [
           "Creating an event. The Design step offers the ready-made themes and a custom one, and the preview on the right is the same component guests get, scaled down.",
       },
       {
-        src: "/projects/glimpse/landing-themes.png",
+        src: asset("projects/glimpse/landing-themes.png"),
         alt: "Four themed guest pages side by side: vintage, graduation, graduation noir and birthday",
         width: 2880,
         height: 1960,
@@ -1340,7 +1342,7 @@ export const projects = [
           "Themes change type, colour, card material and ornaments, not just a palette. A new theme is a new skin; no page changes.",
       },
       {
-        src: "/projects/glimpse/share.jpg",
+        src: asset("projects/glimpse/share.jpg"),
         alt: "Share page with the event's QR code, code, link and host actions",
         width: 2880,
         height: 1864,
@@ -1348,7 +1350,7 @@ export const projects = [
           "The share page: the event code, its link and a QR code for table cards. Ending the event is final for the host, and it unlocks the album download.",
       },
       {
-        src: "/projects/glimpse/cover.jpg",
+        src: asset("projects/glimpse/cover.jpg"),
         alt: "A wedding's guest cover over a wall of polaroid-framed guest photos",
         width: 2880,
         height: 1800,
@@ -1356,7 +1358,7 @@ export const projects = [
           "The guest cover on a desktop. The frames behind the card show the photos the host starred, placed by a fixed order so changing the frame count never reshuffles the wall.",
       },
       {
-        src: "/projects/glimpse/cover-phone.jpg",
+        src: asset("projects/glimpse/cover-phone.jpg"),
         alt: "The wedding's guest cover on a phone",
         width: 1170,
         height: 2532,
@@ -1364,7 +1366,7 @@ export const projects = [
         caption: "The same cover on a phone, where most guests see it: no app, no account.",
       },
       {
-        src: "/projects/glimpse/notes-phone.jpg",
+        src: asset("projects/glimpse/notes-phone.jpg"),
         alt: "Guestbook notes on torn-paper cards on a phone",
         width: 1170,
         height: 2532,
@@ -1372,7 +1374,7 @@ export const projects = [
         caption: "The guestbook, in the event's theme.",
       },
       {
-        src: "/projects/glimpse/host-admin.jpg",
+        src: asset("projects/glimpse/host-admin.jpg"),
         alt: "Host moderation page with photo tiles, star and delete buttons",
         width: 2880,
         height: 1958,
@@ -1380,7 +1382,7 @@ export const projects = [
           "Host moderation. A star puts a photo on the cover wall; delete removes it from storage. Downloads stay locked until the event has ended.",
       },
       {
-        src: "/projects/glimpse/ops-2fa.png",
+        src: asset("projects/glimpse/ops-2fa.png"),
         alt: "Staff dashboard asking for a two-factor code",
         width: 2880,
         height: 1800,
@@ -1388,7 +1390,7 @@ export const projects = [
           "Staff sign-in asks for an authenticator code after the password. Until it is verified, Postgres treats the session as an ordinary user.",
       },
       {
-        src: "/projects/glimpse/ops-overview.png",
+        src: asset("projects/glimpse/ops-overview.png"),
         alt: "Staff dashboard overview with live events, hosts, storage and 24-hour activity",
         width: 2880,
         height: 1800,
@@ -1396,7 +1398,7 @@ export const projects = [
           "The staff overview: live and total events, hosts, storage used, and the last 24 hours of photos and notes. It refreshes over Realtime as new ones arrive.",
       },
       {
-        src: "/projects/glimpse/ops-events.jpg",
+        src: asset("projects/glimpse/ops-events.jpg"),
         alt: "Staff dashboard events grid with photo covers, codes and counts",
         width: 2880,
         height: 1800,
@@ -1404,7 +1406,7 @@ export const projects = [
           "Every event on the platform, searchable by name or code, with each event's photo and note counts.",
       },
       {
-        src: "/projects/glimpse/ops-event.png",
+        src: asset("projects/glimpse/ops-event.png"),
         alt: "Staff dashboard event detail with package, limits, host and photos",
         width: 2880,
         height: 1800,
