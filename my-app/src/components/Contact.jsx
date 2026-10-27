@@ -13,7 +13,7 @@ function Contact() {
       <motion.ul
         variants={stagger}
         {...inView}
-        className="grid grid-cols-1 gap-3 sm:grid-cols-3"
+        className="grid grid-cols-1 gap-3 sm:grid-cols-2"
       >
         {contacts.map((contact) => (
           <motion.li key={contact.label} variants={fadeUp}>

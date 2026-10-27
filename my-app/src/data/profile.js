@@ -24,6 +24,12 @@ export const contacts = [
     href: "tel:+201016544822",
   },
   {
+    label: "LinkedIn",
+    value: "linkedin.com/in/moustafa-eldalatony-0184a1309",
+    href: "https://www.linkedin.com/in/moustafa-eldalatony-0184a1309",
+    external: true,
+  },
+  {
     label: "GitHub",
     value: "github.com/Eldalatony",
     href: "https://github.com/Eldalatony",
