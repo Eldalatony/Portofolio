@@ -1049,7 +1049,7 @@ export const projects = [
       "Glimpse is a SaaS for collecting an event's photos from its guests. A host signs up, builds the event in a four-step wizard with a live preview of the guest page, and pays by card or redeems a prepaid code. Guests open the event's link or QR code, upload photos and leave guestbook notes from the browser, and the host moderates, stars favourites onto the cover's photo wall, and downloads the album once the event has ended. A separate staff dashboard runs the platform from its own subdomain, behind two-factor sign-in. Both apps are React single-page apps on Vercel, sharing one Supabase project: Postgres with row-level security, Auth, Storage and four edge functions. The sections below describe the system as it is built in the repository; the screens show a demo event seeded into a local copy of the database, not customer data.",
 
     meta: [
-      { label: "Timeline", value: "July – October 2026" },
+      { label: "Timeline", value: "July 2026 – present" },
       { label: "Domain", value: "Events · SaaS" },
       { label: "Status", value: "Live" },
       { label: "Scope", value: "2 apps · 4 edge functions" },
